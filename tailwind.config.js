@@ -6,6 +6,9 @@ module.exports = {
     height: {
       imgcontainer: '550px',
     },
+    backgroundColor:{
+      photo: '#262626',
+    }
   },
   plugins: [],
 }
