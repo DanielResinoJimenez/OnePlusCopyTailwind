@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OnePlus</title>
+        <link rel="stylesheet" href="./../output.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    </head>
+<body class="w-full m-auto">
+    <header class="border-b-[1px] border-gray-200">
+        <div class="header__container flex justify-between p-2 bg-white items-center w-11/12 m-auto">
+            <img src="./../assets/images/logo.png" alt="" class="w-22">
+            <nav class="max-lg:hidden">
+                <ul class="flex w-full gap-10 text-sm">
+                    <li><a href="./../index.html" class="transition-all hover:border-b hover:border-red-600">Tienda</a></li>
+                    <li><a href="" class="transition-all hover:border-b hover:border-red-600">Teléfono</a></li>
+                    <li><a href="" class="transition-all hover:border-b hover:border-red-600">Tablet</a></li>
+                    <li><a href="" class="transition-all hover:border-b hover:border-red-600">Ponibles</a></li>
+                    <li><a href="" class="transition-all hover:border-b hover:border-red-600">Audio</a></li>
+                    <li><a href="" class="transition-all hover:border-b hover:border-red-600">Más productos</a></li>
+                    <li><a href="" class="transition-all hover:border-b hover:border-red-600">One Topia</a></li>
+                    <li><a href="" class="transition-all hover:border-b hover:border-red-600">Comunidad</a></li>
+                    <li><a href="" class="transition-all hover:border-b hover:border-red-600">Asistencia</a></li>
+                </ul>
+            </nav>
+            <div class="flex gap-5">
+                <div class=""><i class="fa-solid fa-cart-shopping transition-all hover:border-b hover:border-red-600"></i></div>
+                <div class="max-lg:hidden"><i class="fa-regular fa-user transition-all hover:border-b hover:border-red-600 max-lg:invisible"></i></div>
+                <div class="hidden max-lg:block"><i class="hidden fa-solid fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full">
+        <nav class="flex items-baseline justify-center gap-10 pt-5 pb-5 h-36 border-b-[1px] border-gray-200 w-full">
+            <div class="flex flex-col items-center justify-between">
+                <img src="./../assets/images/navimg1.svg" alt="" class="mb-2">
+                <span class="text-sm">Store</span>
+            </div>
+            <div class="flex flex-col items-center justify-between">
+                <img src="./../assets/images/navimg2.svg" alt="" class="mb-2">
+                <span class="text-sm">Teléfono</span>
+            </div>
+            <div class="flex flex-col items-center justify-between">
+                <img src="./../assets/images/navimg3.svg" alt="" class="mb-2">
+                <span class="text-sm">Tablet</span>
+            </div>
+            <div class="flex flex-col items-center justify-between">
+                <img src="./../assets/images/navimg4.webp" alt="" class="mb-2 h-14">
+                <span class="text-sm">Usables</span>
+            </div>
+            <div class="flex flex-col items-center justify-between">
+                <img src="./../assets/images/navimg5.svg" alt="" class="mb-2">
+                <span class="text-sm">Audios</span>
+            </div>
+            <div class="flex flex-col items-center justify-between">
+                <img src="./../assets/images/navimg6.svg" alt="" class="mb-2">
+                <span class="text-sm">Fundas y protección</span>
+            </div>
+            <div class="flex flex-col items-center justify-between">
+                <img src="./../assets/images/navimg7.svg" alt="" class="mb-2">
+                <span class="text-sm">Cables</span>
+            </div>
+            <div class="flex flex-col items-center justify-between">
+                <img src="./../assets/images/navimg8.svg" alt="" class="mb-2">
+                <span class="text-sm">Manojos</span>
+            </div>
+            <div class="flex flex-col items-center justify-between">
+                <img src="./../assets/images/navimg9.svg" alt="" class="mb-2">
+                <span class="text-sm">Lifestyle</span>
+            </div>
+        </nav>
+        <div class="w-3/4 m-auto flex">
+            <aside class="text-gray-950 flex flex-col gap-10 p-10 mr-20">
+                <div class="flex flex-col gap-3">
+                    <h2 class="font-semibold">Ofertas</h2>
+                    <label for="reg" class="text-sm flex items-center font-semibold gap-2 cursor-pointer">
+                        <input type="checkbox" id="reg" class="cursor-pointer border-2 border-orange-500">
+                        Con regalo
+                    </label>
+                    <label for="of" class="text-sm flex items-center font-semibold gap-2 cursor-pointer">
+                        <input type="checkbox" id="of" class="cursor-pointer border-2 border-orange-500">
+                        En oferta
+                    </label>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h2 class="font-semibold">Serie</h2>
+                    <label for="se" class="text-sm flex items-center font-semibold gap-2 cursor-pointer">
+                        <input type="checkbox" id="se" class="cursor-pointer border-2 border-orange-500">
+                        Serie Flagship
+                    </label>
+                    <label for="ser" class="text-sm flex items-center font-semibold gap-2 cursor-pointer">
+                        <input type="checkbox" id="ser" class="cursor-pointer border-2 border-orange-500">
+                        Serie Nord
+                    </label>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h2 class="font-semibold">RAM/Almacenamiento</h2>
+                    <label for="16" class="text-sm flex items-center font-semibold gap-2 cursor-pointer">
+                        <input type="checkbox" id="16" class="cursor-pointer border-2 border-orange-500">
+                        16/512GB
+                    </label>
+                    <label for="17" class="text-sm flex items-center font-semibold gap-2 cursor-pointer">
+                        <input type="checkbox" id="17" class="cursor-pointer border-2 border-orange-500">
+                        16/256GB
+                    </label>
+                    <label for="18" class="text-sm flex items-center font-semibold gap-2 cursor-pointer">
+                        <input type="checkbox" id="18" class="cursor-pointer border-2 border-orange-500">
+                        12/256GB
+                    </label>
+                    <label for="19" class="text-sm flex items-center font-semibold gap-2 cursor-pointer">
+                        <input type="checkbox" id="19" class="cursor-pointer border-2 border-orange-500">
+                        8/256GB <span class="text-xs text-red-600">Novedad</span>
+                    </label>
+                    <label for="20" class="text-sm flex items-center font-semibold gap-2 cursor-pointer">
+                        <input type="checkbox" id="20" class="cursor-pointer border-2 border-orange-500">
+                        8/128GB
+                    </label>
+                </div> 
+
+            </aside>
+            <div class="pt-10 pl-4 border-l-[1px]">
+                <h3 class="text-gray-700 text-sm pb-4">Clasificar por <span class="text-gray-950 font-semibold">Recomendado</span></h3>
+                <div class="">
+                    <div class="text-gray-950 flex flex-col cursor-pointer">
+                        <div class="bg-phonebg p-5 w-[300px]"><img src="./../assets/images/phone1.webp" alt="" class="w-full h-full object-contain"></div>    
+                        <h2 class="text-xl mb-1">OnePlus Nord 4</h2>
+                        <div class="flex text-xs mb-4">
+                            <p class="text-red-600 font-semibold border-r-[1px] border-gray-400 pr-2 group-hover:text-black">Hasta 10% de descuento</p>
+                            <span class="pl-2">Con Regalo</span>
+                        </div>
+                        <div class="flex gap-3 items-baseline">
+                            <div class=""><i class="fa-solid fa-cart-shopping text-sm"></i></div>
+                            <p class="text-sm flex items-baseline">Desde 449.00 €<span class="line-through text-gray-500 text-xs ml-2">499.00 €</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-[#000]">
+        <h1 class="text-white text-[15px] pt-10 pb-10 flex justify-between m-auto w-[1100px] max-lg:block max-lg:w-full max-lg:p-10">Inicio > Phone</h1>
+        <div class="text-white text-[12px] flex justify-between m-auto w-[1100px] max-lg:block max-lg:w-full max-lg:p-10">
+            <div class="max-lg:flex max-lg:justify-between max-lg:border-b max-lg:border-gray-300 max-lg:mt-5">
+                <h3 class="text-sm font-semibold mb-4 max-lg:text-xl">Teléfono</h3>
+                <ul class="space-y-2 text-gray-300 max-lg:hidden">
+                    <li>OnePlus 12</li>
+                    <li>OnePlus 12R</li>
+                    <li>OnePlus Open</li>
+                    <li>OnePlus Nord 4</li>
+                    <li>OnePlus Nord 3 5G</li>
+                    <li>OnePlus Nord CE4 Lite 5G</li>
+                    <li>OnePlus Nord CE 3 Lite 5G</li>
+                </ul>
+                <div class="hidden max-lg:block"><i class="fa-solid fa-plus text-white"></i></div>
+            </div>
+            <div class="max-lg:flex max-lg:justify-between max-lg:border-b max-lg:border-gray-300 max-lg:mt-5">
+                <h3 class="text-sm font-semibold mb-4 max-lg:text-xl">Accesorios</h3>
+                <ul class="space-y-2 text-gray-300 max-lg:hidden">
+                    <li>Tablet</li>
+                    <li>Ponibles</li>
+                    <li>Audio</li>
+                    <li>Fundas y protección</li>
+                    <li>Cables</li>
+                    <li>Bundles</li>
+                    <li>Lifestyle</li>
+                </ul>
+                <div class="hidden max-lg:block"><i class="fa-solid fa-plus text-white"></i></div>
+            </div>
+            <div class="max-lg:flex max-lg:justify-between max-lg:border-b max-lg:border-gray-300 max-lg:mt-5">
+                <h3 class="text-sm font-semibold mb-4 max-lg:text-xl">Programas</h3>
+                <ul class="space-y-2 text-gray-300 max-lg:hidden max-lg:text-xl">
+                    <li>Vincular tus dispositivos OnePlus</li>
+                    <li>Programa de descuentos</li>
+                    <li>Programa de referencia</li>
+                    <li>Programa de afiliación</li>
+                    <li>Canje de OnePlus</li>
+                </ul>
+                <div class="hidden max-lg:block"><i class="fa-solid fa-plus text-white"></i></div>
+            </div>
+            <div class="max-lg:flex max-lg:justify-between max-lg:border-b max-lg:border-gray-300 max-lg:mt-5">
+                <h3 class="text-sm font-semibold mb-4 max-lg:text-xl">Asistencia</h3>
+                <ul class="space-y-2 text-gray-300 max-lg:hidden">
+                    <li>Preguntas frecuentes sobre compras</li>
+                    <li>Actualización de software</li>
+                    <li>Manuales del usuario</li>
+                    <li>Ponte en Contacto</li>
+                    <li>Resolución de problemas</li>
+                </ul>
+                <div class="hidden max-lg:block"><i class="fa-solid fa-plus text-white"></i></div>
+            </div>
+            <div class="max-lg:flex max-lg:justify-between max-lg:border-b max-lg:border-gray-300 max-lg:mt-5">
+                <h3 class="text-sm font-semibold mb-4 max-lg:text-xl">Empresa</h3>
+                <ul class="space-y-2 text-gray-300 max-lg:hidden">
+                    <li>Sobre OnePlus</li>
+                    <li>Comunidad</li>
+                    <li>Red Cable Club</li>
+                    <li>OnePlus Store App</li>
+                    <li>OxygenOS</li>
+                    <li>Careers</li>
+                    <li>Sostenibilidad</li>
+                    <li>Prensa</li>
+                </ul>
+                <div class="hidden max-lg:block"><i class="fa-solid fa-plus text-white"></i></div>
+            </div>
+        </div>
+        <div class="m-auto flex flex-col justify-center text-gray-500 text-sm w-[1100px] mt-10 max-lg:w-full">
+            <div class="flex justify-between border-b border-gray-500 pb-3">
+                <img src="./assets/images/logosfooter.png" alt="" class="w-[250px] h-footerlogo">
+                <div class="flex items-center">
+                    <div class="border-r border-gray-500 pr-2 flex gap-3 flex-wrap">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <a href="" class="pl-2 text-white">Obtén soporte de OnePlus</a>
+                </div>
+            </div>
+            <div class="flex mt-5 text-xs">
+                <div class="mr-10">
+                    <span class="border-r pr-2 pl-2 border-gray-500">Política de privacidad</span>
+                    <span class="border-r pr-2 pl-2 border-gray-500">User Agreement</span>
+                    <span class="border-r pr-2 pl-2 border-gray-500">Condiciones de venta</span>
+                    <span class="border-r pr-2 pl-2 border-gray-500">Security Response Center (OneSRC)</span>
+                    <span class=" pr-2 pl-2">Cookies</span>
+                </div>
+                <span class="pr-2 pl-2 mr-10">© 2013 - 2024 OnePlus. Todos los derechos reservados.</span>
+                <img src="./assets/images/logofooter2.png" alt="" class="w-[60px] mr-10">
+                <span class="text-[15px]">España (Español)<i class="fa-solid fa-globe text-[15px] ml-2"></i></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -10,6 +10,7 @@ module.exports = {
       },
       backgroundColor:{
         photo: '#262626',
+        phonebg: '#F8F8F8',
       }
       
     },
