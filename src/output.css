@@ -578,6 +578,10 @@ video {
   top: 25%;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .m-12 {
   margin: 3rem;
 }
