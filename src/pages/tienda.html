@@ -8,31 +8,83 @@
     <link rel="stylesheet" href="./../output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
+
 <body class="w-full m-auto">
+
+    <!-- Header -->
+
     <header class="border-b-[1px] border-gray-200">
         <div class="header__container flex justify-between p-2 bg-white items-center w-11/12 m-auto">
             <img src="./../assets/images/logo.png" alt="" class="w-22">
             <nav class="max-lg:hidden">
                 <ul class="flex w-full gap-10 text-sm">
                     <li><a href="" class="transition-all hover:border-b hover:border-red-600">Tienda</a></li>
-                    <li><a href="./telefono.html" class="transition-all hover:border-b hover:border-red-600">Teléfono</a></li>
+                    <li><a href="./telefono.html"
+                            class="transition-all hover:border-b hover:border-red-600">Teléfono</a></li>
                     <li><a href="" class="transition-all hover:border-b hover:border-red-600">Tablet</a></li>
                     <li><a href="" class="transition-all hover:border-b hover:border-red-600">Ponibles</a></li>
                     <li><a href="" class="transition-all hover:border-b hover:border-red-600">Audio</a></li>
                     <li><a href="" class="transition-all hover:border-b hover:border-red-600">Más productos</a></li>
-                    <li><a href="./onetopia.html" class="transition-all hover:border-b hover:border-red-600">One Topia</a></li>
+                    <li><a href="./onetopia.html" class="transition-all hover:border-b hover:border-red-600">One
+                            Topia</a></li>
                     <li><a href="" class="transition-all hover:border-b hover:border-red-600">Comunidad</a></li>
                     <li><a href="" class="transition-all hover:border-b hover:border-red-600">Asistencia</a></li>
                 </ul>
             </nav>
             <div class="flex gap-5">
-                <div class=""><i class="fa-solid fa-cart-shopping transition-all hover:border-b hover:border-red-600"></i></div>
-                <div class="max-lg:hidden"><i class="fa-regular fa-user transition-all hover:border-b hover:border-red-600 max-lg:invisible"></i>Hola, <span id="username"></span></div>
+                <div class=""><i class="fa-solid fa-cart-shopping transition-all hover:border-b hover:border-red-600"
+                        id="cart"></i></div>
+                <div class="max-lg:hidden"><i
+                        class="fa-regular fa-user transition-all hover:border-b hover:border-red-600 max-lg:invisible"></i>Hola,
+                    <span id="username"></span></div>
                 <div class="hidden max-lg:block"><i class="hidden fa-solid fa-bars"></i></div>
             </div>
         </div>
     </header>
+
+    <!-- Main -->
+
     <main>
+        <!-- MODAL WINDOW -->
+        <div class="absolute hidden bg-modalbg left-1/4 top-1/4 w-1/2 p-10" id="modal">
+            <div class="bg-modalbg2 p-10">
+                <div class="bg-gray-500 p-10">
+                    <div class="flex justify-between p-1">
+                        <h3 class="font-bold text-xl">Cesta</h3>
+                        <i class="fa-solid fa-x font-bold cursor-pointer" id="close"></i>
+                    </div>
+                    <table class="w-full mt-10">
+                        <tr class="bg-gray-200">
+                            <th class="text-right p-2 border border-gray-950">Unidades</th>
+                            <th class="text-right p-2 border border-gray-950">Producto</th>
+                            <th class="text-right p-2 border border-gray-950">Precio</th>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="text-right p-2 border border-gray-950">1</td>
+                            <td class="text-right p-2 border border-gray-950">OnePlus Open</td>
+                            <td class="text-right p-2 border border-gray-950">1499.00€</td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="text-right p-2 border border-gray-950">2</td>
+                            <td class="text-right p-2 border border-gray-950">OnePlus Open</td>
+                            <td class="text-right p-2 border border-gray-950">869.00€</td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="text-right p-2 border border-gray-950">1</td>
+                            <td class="text-right p-2 border border-gray-950">OnePlus Nord 4</td>
+                            <td class="text-right p-2 border border-gray-950">499.00€</td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td colspan="2" class="font-bold border border-gray-950 p-2">Total: </td>
+                            <td class="text-right border border-gray-950 p-2 font-bold">499.00€</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Body -->
+
         <div>
             <div
                 class="text__container bg-[url('./assets/images/photo1.jpg')] h-imgcontainer bg-no-repeat bg-cover bg-center max-xl:h-[400px]">
@@ -40,7 +92,9 @@
                     <h2 class="text-4xl">Las ofertas del Black Friday ya están aquí</h2>
                     <p class="text-sm">Encuentreló más barato en OnePlus.com este año y le rembolsaremos la diferencia
                     </p>
-                    <button class="bg-white text-black text-xs p-2 rounded-full mt-5 transition-all hover:bg-gray-400">Más información</button>
+                    <button
+                        class="bg-white text-black text-xs p-2 rounded-full mt-5 transition-all hover:bg-gray-400">Más
+                        información</button>
                 </div>
             </div>
         </div>
@@ -56,7 +110,9 @@
                         Compre ahora para obtener 300 € de descuento en 16 GB
                     </p>
                     <div class="text-gray-50 pt-3">
-                        <button class="text-xs text-gray-900 p-2 bg-white rounded-full transition-all hover:bg-gray-400">Comprar ahora</button>
+                        <button
+                            class="text-xs text-gray-900 p-2 bg-white rounded-full transition-all hover:bg-gray-400">Comprar
+                            ahora</button>
                         <a href="" class="text-xs underline">Ver el producto</a>
                     </div>
                 </div>
@@ -69,7 +125,9 @@
                         Compre ahora para obtener 200 €
                     </p>
                     <div class="text-gray-50 pt-3">
-                        <button class="text-xs text-gray-900 p-2 bg-white rounded-full transition-all hover:bg-gray-400">Comprar ahora</button>
+                        <button
+                            class="text-xs text-gray-900 p-2 bg-white rounded-full transition-all hover:bg-gray-400">Comprar
+                            ahora</button>
                         <a href="" class="text-xs underline">Ver el producto</a>
                     </div>
                 </div>
@@ -87,7 +145,9 @@
                         Compre ahora para obtener 130 € de descuento en 16 GB
                     </p>
                     <div class="text-gray-950 pt-3">
-                        <button class="text-xs text-gray-50 p-2 bg-gray-950 rounded-full transition-all hover:bg-gray-600">Comprar ahora</button>
+                        <button
+                            class="text-xs text-gray-50 p-2 bg-gray-950 rounded-full transition-all hover:bg-gray-600">Comprar
+                            ahora</button>
                         <a href="" class="text-xs underline">Ver el producto</a>
                     </div>
                 </div>
@@ -100,7 +160,9 @@
                         Compre ahora para obtener 100 €
                     </p>
                     <div class="text-gray-950 pt-3">
-                        <button class="text-xs text-gray-50 p-2 bg-gray-950 rounded-full transition-all hover:bg-gray-600">Comprar ahora</button>
+                        <button
+                            class="text-xs text-gray-50 p-2 bg-gray-950 rounded-full transition-all hover:bg-gray-600">Comprar
+                            ahora</button>
                         <a href="" class="text-xs underline">Ver el producto</a>
                     </div>
                 </div>
@@ -118,7 +180,9 @@
                         Ahorra 40 € y llévate GRATIS una OnePlus Nord Buds 3 Pro valorada en 79 €.
                     </p>
                     <div class="text-gray-950 pt-3">
-                        <button class="text-xs text-gray-50 p-2 bg-gray-950 rounded-full transition-all hover:bg-gray-600">Comprar ahora</button>
+                        <button
+                            class="text-xs text-gray-50 p-2 bg-gray-950 rounded-full transition-all hover:bg-gray-600">Comprar
+                            ahora</button>
                         <a href="" class="text-xs underline">Ver el producto</a>
                     </div>
                 </div>
@@ -135,7 +199,9 @@
                     <p class="text-sm mb-8">Fluye con OxygenOS 15. Vuela a un nuevo nivel de velocidad y sumérgete en
                         una fluidez extrema. Con las últimas funcionalidades de AI para un teléfono más inteligente, la
                         velocidad se une a la AI.</p>
-                    <a href="" class="text-xs text-gray-50 p-2 bg-gray-950 rounded-full transition-all hover:bg-gray-600">Más información</a>
+                    <a href=""
+                        class="text-xs text-gray-50 p-2 bg-gray-950 rounded-full transition-all hover:bg-gray-600">Más
+                        información</a>
                 </div>
             </div>
         </div>
@@ -275,9 +341,13 @@
                 de problemas <i class="fa-solid fa-arrow-up rotate-45 font-light"></i></a>
         </div>
     </main>
+
+    <!-- Footer -->
+
     <footer class="bg-[#000]">
         <h1 class="text-white text-2xl m-12 pt-12">Mantente conectado</h1>
-        <div class="bg-[url('./../assets/images/footerimg.png')] h-footerimg bg-no-repeat bg-cover bg-center m-12 rounded-md">
+        <div
+            class="bg-[url('./../assets/images/footerimg.png')] h-footerimg bg-no-repeat bg-cover bg-center m-12 rounded-md">
             <div class="w-96 p-5">
                 <h2 class="text-gray-50 text-3xl">Suscríbete para ahorrar 100 €</h2>
                 <div class="overflow-y-scroll overflow-x-hidden h-10 mt-2">
@@ -286,20 +356,29 @@
                         de productos de OnePlus.
                     </p>
                 </div>
+
+                <!-- Footer Form -->
+
                 <form action="" class="mt-5">
                     <div class="border border-gray-500 flex p-2 rounded-md">
-                        <input type="text" placeholder="Tu dirección e-mail" class="bg-transparent text-gray-500 border-r border-gray-500 pr-2 w-3/4 text-sm">
+                        <input type="text" placeholder="Tu dirección e-mail"
+                            class="bg-transparent text-gray-500 border-r border-gray-500 pr-2 w-3/4 text-sm">
                         <input type="submit" value="Inscribirse" class="pl-2 text-gray-50 text-sm">
                     </div>
                     <div class="flex items-start gap-2 mt-5">
-                        <input type="checkbox"
-                        value="" name="priv" id="priv" class="mt-2">
-                        <label for="priv" class="text-white text-xs">Sí, me gustaría recibir un correo electrónico comercial de OnePlus y acepto la <span class="text-blue-700">política de privacidad</span></label>
+                        <input type="checkbox" value="" name="priv" id="priv" class="mt-2">
+                        <label for="priv" class="text-white text-xs">Sí, me gustaría recibir un correo electrónico
+                            comercial de OnePlus y acepto la <span class="text-blue-700">política de
+                                privacidad</span></label>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="text-white text-[12px] flex justify-between m-auto w-[1100px] max-lg:block max-lg:w-full max-lg:p-10">
+
+        <!-- Footer List -->
+
+        <div
+            class="text-white text-[12px] flex justify-between m-auto w-[1100px] max-lg:block max-lg:w-full max-lg:p-10">
             <div class="max-lg:flex max-lg:justify-between max-lg:border-b max-lg:border-gray-300 max-lg:mt-5">
                 <h3 class="text-sm font-semibold mb-4 max-lg:text-xl">Teléfono</h3>
                 <ul class="space-y-2 text-gray-300 max-lg:hidden">
@@ -391,4 +470,5 @@
     </footer>
 </body>
 <script src="./../js/script.js"></script>
+
 </html>

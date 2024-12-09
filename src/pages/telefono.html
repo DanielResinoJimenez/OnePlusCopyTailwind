@@ -10,6 +10,9 @@
 </head>
 
 <body class="w-full m-auto">
+
+    <!-- Header -->
+
     <header class="border-b-[1px] border-gray-200">
         <div class="header__container flex justify-between p-2 bg-white items-center w-11/12 m-auto">
             <img src="./../assets/images/logo.png" alt="" class="w-22">
@@ -22,7 +25,8 @@
                     <li><a href="" class="transition-all hover:border-b hover:border-red-600">Ponibles</a></li>
                     <li><a href="" class="transition-all hover:border-b hover:border-red-600">Audio</a></li>
                     <li><a href="" class="transition-all hover:border-b hover:border-red-600">Más productos</a></li>
-                    <li><a href="./onetopia.html" class="transition-all hover:border-b hover:border-red-600">One Topia</a></li>
+                    <li><a href="./onetopia.html" class="transition-all hover:border-b hover:border-red-600">One
+                            Topia</a></li>
                     <li><a href="" class="transition-all hover:border-b hover:border-red-600">Comunidad</a></li>
                     <li><a href="" class="transition-all hover:border-b hover:border-red-600">Asistencia</a></li>
                 </ul>
@@ -31,13 +35,57 @@
                 <div class=""><i
                         class="fa-solid fa-cart-shopping transition-all hover:border-b hover:border-red-600"></i></div>
                 <div class="max-lg:hidden"><i
-                        class="fa-regular fa-user transition-all hover:border-b hover:border-red-600 max-lg:invisible"></i></i>Hola, <span id="username"></span>
+                        class="fa-regular fa-user transition-all hover:border-b hover:border-red-600 max-lg:invisible"></i></i>Hola,
+                    <span id="username"></span>
                 </div>
                 <div class="hidden max-lg:block"><i class="hidden fa-solid fa-bars"></i></div>
             </div>
         </div>
     </header>
+
+    <!-- Main -->
+
     <main class="w-full">
+        <!-- MODAL WINDOW -->
+        <div class="absolute hidden bg-modalbg left-1/4 top-1/4 w-1/2 p-10" id="modal">
+            <div class="bg-modalbg2 p-10">
+                <div class="bg-gray-500 p-10">
+                    <div class="flex justify-between p-1">
+                        <h3 class="font-bold text-xl">Cesta</h3>
+                        <i class="fa-solid fa-x font-bold cursor-pointer" id="close"></i>
+                    </div>
+                    <table class="w-full mt-10">
+                        <tr class="bg-gray-200">
+                            <th class="text-right p-2 border border-gray-950">Unidades</th>
+                            <th class="text-right p-2 border border-gray-950">Producto</th>
+                            <th class="text-right p-2 border border-gray-950">Precio</th>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="text-right p-2 border border-gray-950">1</td>
+                            <td class="text-right p-2 border border-gray-950">OnePlus Open</td>
+                            <td class="text-right p-2 border border-gray-950">1499.00€</td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="text-right p-2 border border-gray-950">2</td>
+                            <td class="text-right p-2 border border-gray-950">OnePlus Open</td>
+                            <td class="text-right p-2 border border-gray-950">869.00€</td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="text-right p-2 border border-gray-950">1</td>
+                            <td class="text-right p-2 border border-gray-950">OnePlus Nord 4</td>
+                            <td class="text-right p-2 border border-gray-950">499.00€</td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td colspan="2" class="font-bold border border-gray-950 p-2">Total: </td>
+                            <td class="text-right border border-gray-950 p-2 font-bold">499.00€</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Nav -->
+
         <nav class="flex items-baseline justify-center border-b-[1px] border-gray-200 w-full flex-wrap">
             <div class="flex flex-col items-center justify-between p-6 hover:border-b hover:border-orange-600">
                 <img src="./../assets/images/navimg1.svg" alt="" class="mb-2">
@@ -76,7 +124,13 @@
                 <span class="text-sm">Lifestyle</span>
             </div>
         </nav>
+
+        <!-- Main Body -->
+
         <div class="w-3/4 m-auto flex max-md:flex-col max-md:items-center">
+
+            <!-- Main Body Aside -->
+
             <aside class="text-gray-950 flex flex-col gap-10 p-10 mr-20">
                 <div class="flex flex-col gap-3">
                     <h2 class="font-semibold">Ofertas</h2>
@@ -125,6 +179,9 @@
                 </div>
 
             </aside>
+
+            <!-- Main Body Cards -->
+
             <div class="pt-10 pl-4 border-l-[1px] pb-20">
                 <h3 class="text-gray-700 text-sm pb-4">Clasificar por <span
                         class="text-gray-950 font-semibold">Recomendado</span></h3>
@@ -193,7 +250,9 @@
                     </div>
 
                     <div class="text-gray-950 flex flex-col cursor-pointer">
-                        <div class="bg-phonebg p-5 w-[300px] relative after:absolute after:content-['Agotado'] after:text-[10px] after:top-1/2 after:left-28 after:bg-gray-400 after:bg-opacity-50 after:border after:border-gray-500 after:rounded-md after:p-2"><img src="./../assets/images/phone5.webp" alt=""
+                        <div
+                            class="bg-phonebg p-5 w-[300px] relative after:absolute after:content-['Agotado'] after:text-[10px] after:top-1/2 after:left-28 after:bg-gray-400 after:bg-opacity-50 after:border after:border-gray-500 after:rounded-md after:p-2">
+                            <img src="./../assets/images/phone5.webp" alt=""
                                 class="w-full h-full object-contain opacity-40"></div>
                         <h2 class="text-xl mb-1">OnePlus 12R</h2>
                         <div class="flex gap-3 items-baseline">
@@ -203,7 +262,9 @@
                     </div>
 
                     <div class="text-gray-950 flex flex-col cursor-pointer">
-                        <div class="bg-phonebg p-5 w-[300px] relative after:absolute after:content-['Agotado'] after:text-[10px] after:top-1/2 after:left-28 after:bg-gray-400 after:bg-opacity-50 after:border after:border-gray-500 after:rounded-md after:p-2"><img src="./../assets/images/phone6.webp" alt=""
+                        <div
+                            class="bg-phonebg p-5 w-[300px] relative after:absolute after:content-['Agotado'] after:text-[10px] after:top-1/2 after:left-28 after:bg-gray-400 after:bg-opacity-50 after:border after:border-gray-500 after:rounded-md after:p-2">
+                            <img src="./../assets/images/phone6.webp" alt=""
                                 class="w-full h-full object-contain opacity-40"></div>
                         <h2 class="text-xl mb-1">OnePlus Nord 3 5G</h2>
                         <div class="flex text-xs mb-4">
@@ -219,7 +280,9 @@
                         </div>
                     </div>
                     <div class="text-gray-950 flex flex-col cursor-pointer">
-                        <div class="bg-phonebg p-5 w-[300px] relative after:absolute after:content-['Agotado'] after:text-[10px] after:top-1/2 after:left-28 after:bg-gray-400 after:bg-opacity-50 after:border after:border-gray-500 after:rounded-md after:p-2"><img src="./../assets/images/phone7.webp" alt=""
+                        <div
+                            class="bg-phonebg p-5 w-[300px] relative after:absolute after:content-['Agotado'] after:text-[10px] after:top-1/2 after:left-28 after:bg-gray-400 after:bg-opacity-50 after:border after:border-gray-500 after:rounded-md after:p-2">
+                            <img src="./../assets/images/phone7.webp" alt=""
                                 class="w-full h-full object-contain opacity-40"></div>
                         <h2 class="text-xl mb-1">OnePlus Nord CE3 Lite 5G</h2>
                         <div class="flex text-xs mb-4">
@@ -238,10 +301,16 @@
             </div>
         </div>
     </main>
+
+<!-- Footer -->
+
     <footer class="bg-[#000]">
         <h1
             class="text-white text-[15px] pt-10 pb-10 flex justify-between m-auto w-[1100px] max-lg:block max-lg:w-full max-lg:p-10">
             Inicio > Phone</h1>
+
+        <!-- Footer List -->
+        
         <div
             class="text-white text-[12px] flex justify-between m-auto w-[1100px] max-lg:block max-lg:w-full max-lg:p-10">
             <div class="max-lg:flex max-lg:justify-between max-lg:border-b max-lg:border-gray-300 max-lg:mt-5">
@@ -335,4 +404,5 @@
     </footer>
 </body>
 <script src="./../js/script.js"></script>
+
 </html>

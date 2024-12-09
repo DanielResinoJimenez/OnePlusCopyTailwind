@@ -11,6 +11,8 @@ module.exports = {
       backgroundColor:{
         photo: '#262626',
         phonebg: '#F8F8F8',
+        modalbg: 'rgba(115, 90, 103, 0.43)',
+        modalbg2: 'rgba(73, 57, 65, 0.7)',
       },
       keyframes:{
         slidebg:{

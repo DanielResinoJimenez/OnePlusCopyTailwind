@@ -10,6 +10,9 @@
 </head>
 
 <body class="w-full m-auto">
+
+<!-- Header -->
+
     <header class="border-b-[1px] border-gray-200">
         <div class="header__container flex justify-between p-2 bg-white items-center w-11/12 m-auto">
             <img src="./../assets/images/logo.png" alt="" class="w-22">
@@ -32,17 +35,63 @@
                 <div class=""><i
                         class="fa-solid fa-cart-shopping transition-all hover:border-b hover:border-red-600"></i></div>
                 <div class="max-lg:hidden"><i
-                        class="fa-regular fa-user transition-all hover:border-b hover:border-red-600 max-lg:invisible"></i></i>Hola, <span id="username"></span>
+                        class="fa-regular fa-user transition-all hover:border-b hover:border-red-600 max-lg:invisible"></i></i>Hola,
+                    <span id="username"></span>
                 </div>
                 <div class="hidden max-lg:block"><i class="hidden fa-solid fa-bars"></i></div>
             </div>
         </div>
     </header>
+
+    <!-- Main -->
+
     <main>
+        <!-- MODAL WINDOW -->
+        <div class="absolute hidden bg-modalbg left-1/4 top-1/4 w-1/2 p-10" id="modal">
+            <div class="bg-modalbg2 p-10">
+                <div class="bg-gray-500 p-10">
+                    <div class="flex justify-between p-1">
+                        <h3 class="font-bold text-xl">Cesta</h3>
+                        <i class="fa-solid fa-x font-bold cursor-pointer" id="close"></i>
+                    </div>
+                    <table class="w-full mt-10">
+                        <tr class="bg-gray-200">
+                            <th class="text-right p-2 border border-gray-950">Unidades</th>
+                            <th class="text-right p-2 border border-gray-950">Producto</th>
+                            <th class="text-right p-2 border border-gray-950">Precio</th>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="text-right p-2 border border-gray-950">1</td>
+                            <td class="text-right p-2 border border-gray-950">OnePlus Open</td>
+                            <td class="text-right p-2 border border-gray-950">1499.00€</td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="text-right p-2 border border-gray-950">2</td>
+                            <td class="text-right p-2 border border-gray-950">OnePlus Open</td>
+                            <td class="text-right p-2 border border-gray-950">869.00€</td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="text-right p-2 border border-gray-950">1</td>
+                            <td class="text-right p-2 border border-gray-950">OnePlus Nord 4</td>
+                            <td class="text-right p-2 border border-gray-950">499.00€</td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td colspan="2" class="font-bold border border-gray-950 p-2">Total: </td>
+                            <td class="text-right border border-gray-950 p-2 font-bold">499.00€</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+<!-- Main Body -->
+
         <div class="bg-black m-auto w-full pb-16">
             <div class="w-[1200px] m-auto max-xl:w-full">
-                <h2 class="pb-2 pt-12 font-semibold text-[17px] border-b-[1px] border-gray-500 text-gray-50">OnePlus Featuring</h2>
-                <h1 class="text-gray-50 text-[45px] pt-10 pb-10">CREADO CONJUNTAMENTE PARA LA VIDA DIGITAL PARA QUE NUNCA TE CONFORMES.</h1>
+                <h2 class="pb-2 pt-12 font-semibold text-[17px] border-b-[1px] border-gray-500 text-gray-50">OnePlus
+                    Featuring</h2>
+                <h1 class="text-gray-50 text-[45px] pt-10 pb-10">CREADO CONJUNTAMENTE PARA LA VIDA DIGITAL PARA QUE
+                    NUNCA TE CONFORMES.</h1>
                 <div class="w-full max-md:h-[300px] max-sm:p-2">
                     <img src="./../assets/images/onetopia1.webp" alt="" class="object-cover">
                 </div>
@@ -55,46 +104,64 @@
                         <div class="">
                             <div class="font-semibold mb-2">
                                 <p class="text-xs text-red-600">Hasta 35% de descuento</p>
-                                <p class="text-sm">Tecnología de OnePlus Design | Interruptores creados conjuntamente | Las primeras teclas
+                                <p class="text-sm">Tecnología de OnePlus Design | Interruptores creados conjuntamente |
+                                    Las primeras teclas
                                     con rebote pero duraderas</p>
                             </div>
-                            <p class="text-[17px] mb-2">Desde 159.00 € <span class="line-through text-gray-500 text-sm">249.00€</span></p>
+                            <p class="text-[17px] mb-2">Desde 159.00 € <span
+                                    class="line-through text-gray-500 text-sm">249.00€</span></p>
                             <div class="overflow-hidden max-md:w-full flex gap-2">
-                                <button class="bg-gray-50 text-gray-950 py-2 border border-gray-50 rounded-sm text-sm hover:bg-gray-300 w-1/2">Comprar ahora</button>
-                                <button class="overflow-hidden relative bg-transparent text-gray-50  py-2 border border-gray-50 rounded-sm w-1/2 text-sm before:top-0 before:content-[''] before:absolute before:h-full before:w-full hover:before:animate-slidebg">Ver el producto</button>
+                                <button
+                                    class="bg-gray-50 text-gray-950 py-2 border border-gray-50 rounded-sm text-sm hover:bg-gray-300 w-1/2">Comprar
+                                    ahora</button>
+                                <button
+                                    class="overflow-hidden relative bg-transparent text-gray-50  py-2 border border-gray-50 rounded-sm w-1/2 text-sm before:top-0 before:content-[''] before:absolute before:h-full before:w-full hover:before:animate-slidebg">Ver
+                                    el producto</button>
                             </div>
                         </div>
                     </div>
                     <div class="flex w-4/6 h-96 overflow-hidden max-lg:h-[300px] max-lg:w-[400px]">
-                        <img src="./../assets/images/photo6.jpg" alt="" class="object-cover transition-transform hover:scale-[1.1]">
+                        <img src="./../assets/images/photo6.jpg" alt=""
+                            class="object-cover transition-transform hover:scale-[1.1]">
                     </div>
                 </div>
             </div>
         </div>
+
+<!-- Main Video -->
+
         <div class="h-[700px] max-md:hidden">
-            <video src="./../assets/images/onetopiavideo.mp4" class="w-full h-full object-cover" autoplay loop muted></video>
+            <video src="./../assets/images/onetopiavideo.mp4" class="w-full h-full object-cover" autoplay loop
+                muted></video>
         </div>
         <div class="w-[1200px] m-auto pb-20 max-xl:w-full overflow-hidden">
-            <h2 class="text-5xl font-semibold border-b-[1px] border-gray-300 pb-6 pt-10 text-gray-900">Una plataforma dirigida por sus usuarios que aspira a crear un nivel de vida digital superior.</h2>
+            <h2 class="text-5xl font-semibold border-b-[1px] border-gray-300 pb-6 pt-10 text-gray-900">Una plataforma
+                dirigida por sus usuarios que aspira a crear un nivel de vida digital superior.</h2>
             <div class="flex gap-10 flex-wrap max-md:justify-center m-auto">
                 <div class="w-[320px]">
                     <img src="./../assets/images/onetopiaicon1.svg" alt="" class="py-6">
                     <h3 class="text-gray-950 text-[20px]">Productos Innovadores</h3>
-                    <p class="text-gray-700 text-[13px]">Proporcionando tecnología de vanguardia con la mejor experiencia para así potenciar su vida digital.</p>
+                    <p class="text-gray-700 text-[13px]">Proporcionando tecnología de vanguardia con la mejor
+                        experiencia para así potenciar su vida digital.</p>
                 </div>
                 <div class="w-[320px]">
                     <img src="./../assets/images/onetopiaicon2.svg" alt="" class="py-6">
                     <h3 class="text-gray-950 text-[20px]">Co-Creación</h3>
-                    <p class="text-gray-700 text-[13px]">Fomentar que los usuarios se unan e involucren plenamente y de manera creativa para así dar forma a ideas increíbles.</p>
+                    <p class="text-gray-700 text-[13px]">Fomentar que los usuarios se unan e involucren plenamente y de
+                        manera creativa para así dar forma a ideas increíbles.</p>
                 </div>
                 <div class="w-[320px]">
                     <img src="./../assets/images/onetopiaicon3.svg" alt="" class="py-6">
                     <h3 class="text-gray-950 text-[20px]">Inversión en RedCoins</h3>
-                    <p class="text-gray-700 text-[13px]">Invierta en productos co-creados con RedCoins y obtenga como contrapartida el triple de los RedCoins que haya invertido.</p>
+                    <p class="text-gray-700 text-[13px]">Invierta en productos co-creados con RedCoins y obtenga como
+                        contrapartida el triple de los RedCoins que haya invertido.</p>
                 </div>
             </div>
         </div>
     </main>
+
+<!-- Footer -->
+
     <footer class="bg-[#000]">
         <div class="flex m-auto w-[1100px] gap-1 pt-20 max-xl:w-full">
             <h2 class="text-gray-50 text-6xl font-light w-full">Preguntas frecuentes</h2>
@@ -110,6 +177,9 @@
         <h1
             class="text-white text-[15px] pt-10 pb-10 flex justify-between m-auto w-[1100px] max-lg:block max-lg:w-full max-lg:p-10">
             Inicio > OnePlus Featuring | OnePlus</h1>
+
+<!-- Footer List -->
+
         <div
             class="text-white text-[12px] flex justify-between m-auto w-[1100px] max-lg:block max-lg:w-full max-lg:p-10">
             <div class="max-lg:flex max-lg:justify-between max-lg:border-b max-lg:border-gray-300 max-lg:mt-5">
@@ -203,4 +273,5 @@
     </footer>
 </body>
 <script src="./../js/script.js"></script>
+
 </html>
