@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
     <link rel="stylesheet" href="./output.css">
+    <link rel="shortcut icon" href="./assets/images/icono.png" />
 </head>
 
-<body class="m-auto h-screen flex items-center bg-[url('./assets/images/photo2.jpg')] bg-no-repeat bg-cover bg-center">
+<body class="m-auto h-screen flex flex-col justify-center items-center bg-[url('./assets/images/photo2.jpg')] bg-no-repeat bg-cover bg-center">
     <div class="h-[300px] w-[600px] m-auto border border-gray-50 rounded-xl">
 
         <!-- Login Form -->
@@ -16,16 +17,26 @@
         <form id="form" novalidate action="./pages/tienda.html" class="bg-[#282828] p-3 rounded-xl h-full flex flex-col justify-between">
             <div class="flex flex-col gap-3 m-3">
                 <label for="" class="text-gray-50 text-xl">Username: </label>
-                <input type="text" placeholder="Username" id="username" required class="bg-gray-50 text-gray-950 text-center py-2 rounded-xl">
+                <input disabled type="text" placeholder="Username" id="username" required class="bg-gray-50 text-gray-950 text-center py-2 rounded-xl">
                 <label for="" class="text-gray-50 text-xl">Password: </label>
-                <input type="password" placeholder="Password" id="password" required class="bg-gray-50 text-gray-950 text-center py-2 rounded-xl">
+                <input disabled type="password" placeholder="Password" id="password" required class="bg-gray-50 text-gray-950 text-center py-2 rounded-xl">
                 <span id="error" class="text-red-700 text-sm text-right"></span>
             </div>
             <div class="flex items-center justify-center gap-3 m-3">
                 <input type="reset" value="Reset" class="bg-gray-50 w-36 py-2 rounded-xl text-center border border-gray-500">
-                <button id="send" class="bg-gray-50 w-36 py-2 rounded-xl text-center border border-gray-500">Send</button>
+                <button id="send" disabled class="bg-gray-50 w-36 py-2 rounded-xl text-center border border-gray-500">Send</button>
             </div>
         </form>
+    </div>
+
+    <!-- COOKIES -->    
+
+    <div class="w-1/2 h-[200px] text-center bg-gray-50 m-10 rounded-xl flex flex-col justify-between" id="cookies">
+        <h2 class="text-xl h-[50px] flex items-center justify-center">Acepta las cookies de la página para poder acceder</h2>
+        <div class="flex justify-end gap-3 m-3">
+            <span class="bg-[#282828] py-2 px-5 rounded-md text-gray-50 font-semibold cursor-pointer hover:bg-gray-700">Rechazar Cookies</span>
+            <span class="bg-[#282828] py-2 px-5 rounded-md text-gray-50 font-semibold cursor-pointer hover:bg-gray-700" id="accept">Aceptar Cookies</span>
+        </div>
     </div>
 </body>
 <script src="./js/login.js"></script>

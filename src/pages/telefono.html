@@ -7,6 +7,7 @@
     <title>OnePlus</title>
     <link rel="stylesheet" href="./../output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="shortcut icon" href="./../assets/images/icono.png" />
 </head>
 
 <body class="w-full m-auto">
@@ -47,38 +48,21 @@
 
     <main class="w-full">
         <!-- MODAL WINDOW -->
-        <div class="absolute hidden bg-modalbg left-1/4 top-1/4 w-1/2 p-10 z-40" id="modal">
-            <div class="bg-modalbg2 p-10">
-                <div class="bg-gray-500 p-10">
+        <div class="absolute hidden bg-gray-600 right-0 h-full w-72 pt-2" id="modal">
+            <div class="w-64 p-5">
+                <div class="">
                     <div class="flex justify-between p-1">
                         <h3 class="font-bold text-xl">Cesta</h3>
                         <i class="fa-solid fa-x font-bold cursor-pointer" id="close"></i>
                     </div>
-                    <table class="w-full mt-10">
-                        <tr class="bg-gray-200">
-                            <th class="text-right p-2 border border-gray-950">Unidades</th>
-                            <th class="text-right p-2 border border-gray-950">Producto</th>
-                            <th class="text-right p-2 border border-gray-950">Precio</th>
-                        </tr>
-                        <tr class="bg-gray-200">
-                            <td class="text-right p-2 border border-gray-950">1</td>
-                            <td class="text-right p-2 border border-gray-950">OnePlus Open</td>
-                            <td class="text-right p-2 border border-gray-950">1499.00€</td>
-                        </tr>
-                        <tr class="bg-gray-200">
-                            <td class="text-right p-2 border border-gray-950">2</td>
-                            <td class="text-right p-2 border border-gray-950">OnePlus Open</td>
-                            <td class="text-right p-2 border border-gray-950">869.00€</td>
-                        </tr>
-                        <tr class="bg-gray-200">
-                            <td class="text-right p-2 border border-gray-950">1</td>
-                            <td class="text-right p-2 border border-gray-950">OnePlus Nord 4</td>
-                            <td class="text-right p-2 border border-gray-950">2.867.00€</td>
-                        </tr>
-                        <tr class="bg-gray-200">
-                            <td colspan="2" class="font-bold border border-gray-950 p-2">Total: </td>
-                            <td class="text-right border border-gray-950 p-2 font-bold">499.00€</td>
-                        </tr>
+                    <table class="w-full mt-10 text-right">
+                        <tr><th colspan="1">Uds</th><th colspan="1">Producto</th><th colspan="1">Precio</th></tr>
+                        <tr class="text-gray-300"><td>1</td><td>OnePlus 12</td><td class="price">869.00</td></tr>
+                        <tr class="text-gray-300"><td>1</td><td>OnePlus 12R</td><td class="price">469.00</td></tr>
+                        <tr class="text-gray-300"><td>2</td><td>OnePlus Fold</td><td class="price">1499.00</td></tr>
+                    </table>
+                    <table class="w-full mt-10 text-right">
+                        <tr class=""><td>Total:</td><td id="total"></td></tr>
                     </table>
                 </div>
             </div>

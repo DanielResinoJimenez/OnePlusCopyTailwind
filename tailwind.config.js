@@ -22,10 +22,20 @@ module.exports = {
         imgzoom:{
           '0%' : {transform: "scale(1)"},
           '100%' : {transform: "scale(1.1)"}
+        },
+        modalopen:{
+          '0%' : {transform: "translateX(500px)"},
+          '100%' : {transform: "translateX(0px)"}
+        },
+        modalclose:{
+          '0%' : {transform: "translateX(0px)"},
+          '100%' : {transform: "translateX(500px)"}
         }
       },
       animation:{
         slidebg: 'slidebg 0.2s ease-in-out forwards',
+        modalopen: 'modalopen 0.5s ease-in-out forwards',
+        modalclose: 'modalclose 0.5s ease-in-out forwards',
       }
     },
   },
